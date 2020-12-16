@@ -1,1 +1,180 @@
-Hello world
+
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Dark Flash Normal Camera</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <base href="/"> -->
+
+<!--     <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+  <!-- <link rel="icon" type="image/png" href="icon.png"> -->
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h1 class="col-md-12 text-center">
+               A Dark Flash Normal Camera</br>
+<!--                 <small>
+                    CVPR 2020
+                </small> -->
+            </h1>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://www.cse.wustl.edu/~zhihao.xia/">
+                          Zhihao Xia
+                        </a>
+                        </br>WUSTL
+                    </li>
+                    <li>
+                        <a href="https://scholar.google.com/citations?user=c4XKzcIAAAAJ&hl">
+                            Jason Lawrence
+                        </a>
+                        </br>Google Research
+                    </li>
+                    <li>
+                        <a href="http://www.cs.cmu.edu/~sachar/">
+                          Supreeth Achar
+                        </a>
+                        </br>Google Research
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li>
+                            <a href="https://arxiv.org/abs/2012.06125">
+                            <image src="paper.jpg" height="120px"><br>
+                                <h4><strong>Paper</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://youtu.be/RboGUBqYQec">
+                            <image src="youtube_icon.png" height="120px"><br>
+                                <h4><strong>Result Video</strong></h4>
+                            </a>
+                        </li>
+<!--                         <li>
+                            <image src="github_icon.png" height="120px"><br>
+                                <h4><strong>Code (coming soon)</strong></h4>
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Example Results
+                </h3>
+                <img src="teaser_noisy.gif" style="max-height: 20em; max-width:32%"> 
+                <img src="teaser_kpn.png" style="max-height: 20em; max-width:32%">  
+                <img src="teaser_bpn.png" style="max-height: 20em; max-width:32%">
+            </div>
+        </div>
+
+
+<!--         <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Links
+                </h3>
+            </div>
+        </div> -->
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Abstract
+                </h3>
+                <p class="text-justify">
+                Casual photography is often performed in uncontrolled lighting that can result in low quality images and degrade the performance of downstream processing. We consider the problem of estimating surface normal and reflectance maps of scenes depicting people despite these conditions by supplementing the available visible illumination with a single near infrared (NIR) light source and camera, a so-called "dark flash image". Our method takes as input a single color image captured under arbitrary visible lighting and a single dark flash image captured under controlled front-lit NIR lighting at the same viewpoint, and computes a normal map, a diffuse albedo map, and a specular intensity map of the scene. Since ground truth normal and reflectance maps of faces are difficult to capture, we propose a novel training technique that combines information from two readily available and complementary sources: a stereo depth signal and photometric shading cues. We evaluate our method over a range of subjects and lighting conditions and describe two applications: optimizing stereo geometry and filling the shadows in an image.
+                </p>
+                <image src="overview.jpg" class="img-responsive" alt="overview"><br>
+            </div>
+        </div>
+
+
+<!--         <div class="row" id="header_img">
+            <figure class="col-md-8 col-md-offset-2">
+                <image src="img/llff_teaser.png" class="img-responsive" alt="overview">
+                <figcaption>
+                </figcaption>
+            </figure>
+
+        </div> -->
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Technical Video
+                </h3>
+                <div class="text-center">
+                    <div style="position:relative;padding-top:56.25%;">
+                        <iframe src="https://www.youtube.com/embed/RboGUBqYQec" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    BibTeX
+                </h3>
+                <div class="form-group col-md-10 col-md-offset-1">
+                    <textarea id="bibtex" class="form-control" readonly>
+@InProceedings{darkflashnormal2020,
+author = {Zhihao Xia and Jason Lawrence and Supreeth Achar},
+title = {A Dark Flash Normal Camera},
+booktitle = {arXiv},
+year = {2020}
+}
+</textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Acknowledgements
+                </h3>
+                The website template was borrowed from <a href="http://mgharbi.com/">Micha&euml;l Gharbi</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
